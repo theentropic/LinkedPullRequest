@@ -1,0 +1,40 @@
+{
+  "name": "linked-pull-request",
+  "version": "1.0.0",
+  "description": "Automatically blocks pull requests if there is a link to a parent pull request in the description",
+  "main": "dist/app.js",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theentropic/LinkedPullRequest.git"
+  },
+  "keywords": [
+    "Linked",
+    "PR",
+    "Pull",
+    "Request",
+    "Git"
+  ],
+  "author": "Entropic Solutions",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/theentropic/LinkedPullRequest/issues"
+  },
+  "homepage": "https://github.com/theentropic/LinkedPullRequest#readme",
+  "dependencies": {
+    "azure-devops-node-api": "^9.0.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.0",
+    "@types/node": "^12.6.9",
+    "tslint": "^5.18.0",
+    "typescript": "^3.5.3"
+  }
+}
