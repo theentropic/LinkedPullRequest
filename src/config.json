@@ -1,0 +1,5 @@
+{
+    "port": 3000,
+    "collection": "<your Azure collection url>",
+    "token": "your Azure Personal Access Token>"
+}
